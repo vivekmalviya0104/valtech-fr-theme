@@ -1,0 +1,28 @@
+.cmp-tabs {
+
+    .cmp-teaser__image {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+.cmp-tabs__tablist {
+    justify-content: center;
+    li {
+        margin-right: 40px;
+        text-transform: uppercase;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+.cmp-tabs__tab {
+    font-size: 1.2rem;
+}
+.cmp-tabs__tab--active {
+    border-bottom: 3px solid $color-foreground;
+}
+.cmp-tabs__tabpanel {}
+.cmp-tabs__tabpanel--active {
+    
+}
