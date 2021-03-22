@@ -1,14 +1,79 @@
-.cmp-carousel {}
-.cmp-carousel__content {}
-.cmp-carousel__item {}
-.cmp-carousel__actions {}
-.cmp-carousel__action {}
-.cmp-carousel__action--disabled {}
-.cmp-carousel__action--previous {}
-.cmp-carousel__action--next {}
-.cmp-carousel__action--pause {}
-.cmp-carousel__action--play {}
-.cmp-carousel__action-icon {}
-.cmp-carousel__action-text {}
-.cmp-carousel__indicators {}
-.cmp-carousel__indicator {}
+.cmp-carousel {
+}
+.cmp-carousel__content {
+  .cmp-image {
+    padding: 0;
+  }
+}
+.cmp-carousel__item {
+}
+.cmp-carousel__actions {
+}
+.cmp-carousel__action {
+  display: none;
+  &--previous {
+    top: 50%;
+    left: 16px;
+    position: absolute;
+    transform: translateY(-50%);
+    .cmp-carousel__action-icon {
+      transform: rotate(45deg);
+    }
+  }
+
+  &--next {
+    right: 16px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    .cmp-carousel__action-icon {
+      transform: rotate(225deg);
+    }
+  }
+
+  &--previous,
+  &--next {
+    display: block;
+    border: none;
+    background: transparent;
+    .cmp-carousel__action-icon {
+      height: 2rem;
+      width: 2rem;
+      border-color: #202020;
+      display: inline-block;
+      border-bottom: 1px solid;
+      border-left: 1px solid;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+    .cmp-carousel__action-text {
+      display: none;
+    }
+  }
+}
+.cmp-carousel__action--disabled {
+}
+.cmp-carousel__action--previous {
+}
+.cmp-carousel__action--next {
+}
+.cmp-carousel__action--pause {
+}
+.cmp-carousel__action--play {
+}
+.cmp-carousel__action-icon {
+}
+.cmp-carousel__action-text {
+}
+.cmp-carousel__indicators {
+}
+.cmp-carousel__indicator {
+  width: 50px;
+  height: 3px;
+  border-radius: 0;
+  background-color: $color-alternate;
+
+  &--active {
+    background-color: $color-accent;
+  }
+}

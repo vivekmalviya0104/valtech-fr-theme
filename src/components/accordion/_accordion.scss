@@ -1,10 +1,54 @@
-.cmp-accordion {}
-.cmp-accordion__item {}
-.cmp-accordion__header {}
-.cmp-accordion__button {}
-.cmp-accordion__button--expanded {}
-.cmp-accordion__title {}
-.cmp-accordion__icon {}
-.cmp-accordion__panel {}
-.cmp-accordion__panel--expanded {}
-.cmp-accordion__panel--hidden {}
+.accordion,
+.accordion + .image {
+  margin-top: 40px;
+}
+.accordion + .image img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+.accordion + .image .cmp-image {
+  padding: 0;
+}
+.cmp-accordion {
+  padding: 20px;
+  background: $color-grey;
+}
+.cmp-accordion__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-foreground;
+  }
+  padding: 10px;
+}
+.cmp-accordion__header {
+}
+.cmp-accordion__button {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 10px;
+  &:after {
+    content: '⌄';
+    position: absolute;
+    right: 0;
+    top: -12px;
+    font-size: 2.5rem;
+  }
+}
+.cmp-accordion__button--expanded {
+  &:after {
+    transform: rotate(178deg);
+    top: 12px;
+  }
+}
+.cmp-accordion__title {
+  font-size: 1.5rem;
+}
+.cmp-accordion__icon {
+}
+.cmp-accordion__panel {
+}
+.cmp-accordion__panel--expanded {
+}
+.cmp-accordion__panel--hidden {
+}

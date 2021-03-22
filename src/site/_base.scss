@@ -34,6 +34,29 @@ textarea {
     .cmp-container {
         display: flex;
         flex-direction: row;
+        align-items: center;
+
+        .aem-Grid {
+            display: flex;
+            flex-direction: row;
+
+            .separator {
+                display: none;
+            }
+
+            .text {
+                margin: 0!important;
+                width: 50%!important;
+                text-align: right;
+            }
+            .container {
+                width: 50%!important;
+
+                .cmp-image {
+                    padding: 0 40px;
+                }
+            }
+        }
     }
 }
 

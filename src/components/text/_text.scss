@@ -1,14 +1,17 @@
 .cmp-text {
-    h3 {
-        font-size: 1rem;
-        color: $color-alternate;
-        margin: 0;
-    }
-    h1 {
-        color: $color-accent;
-        font-size: 3rem;
-        margin: 0!important;
-    }
+  h3 {
+    font-size: 1rem;
+    color: $color-alternate;
+    margin: 0;
+  }
+  h1 {
+    color: $color-accent;
+    font-size: 3rem;
+    margin: 0 !important;
+    text-align: center;
+  }
 }
-.cmp-text__paragraph {}
-.cmp-text__highlight {}
+.cmp-text__paragraph {
+}
+.cmp-text__highlight {
+}
